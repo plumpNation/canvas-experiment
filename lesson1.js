@@ -1,3 +1,4 @@
+/*global document */
 /*!
  * LESSON 1
  *
@@ -18,12 +19,12 @@
     context.beginPath();
 
     // Move our 'drawing point'
-    context.moveTo(200, 100);
+    context.moveTo(150, 100);
 
     // Draw a few lines
-    context.lineTo(100, 100);
-    context.lineTo(200, 150);
-    context.lineTo(100, 50);
+    context.lineTo(50, 100);
+    context.lineTo(150, 150);
+    context.lineTo(50, 50);
 
     context.stroke();
 
@@ -32,17 +33,38 @@
     context.beginPath();
 
     // Move our 'drawing point'
-    context.moveTo(400, 100);
+    context.moveTo(350, 100);
 
     // Draw a few lines
-    context.lineTo(300, 100);
-    context.lineTo(400, 150);
-    context.lineTo(300, 50);
+    context.lineTo(250, 100);
+    context.lineTo(350, 150);
+    context.lineTo(250, 50);
 
     // Now look what happens when we closePath. It does exactly that,
     // i.e. it draws a line back to the point we started from.
     context.closePath();
-
     context.stroke();
 
+    // One last example to show you the line joins and ends.
+    // These must be set before stroke is called.
+    // The end of the line is called a 'cap'.
+    // Line joins can be miter, round, or bevel.
+    // http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/
+    context.lineJoin = 'round'; // defaults to miter
+
+    // Line joins can be butt, round, or square. Butt looks like square however
+    // square ADDS a square ending whereas butt doesn't add anything.
+    // http://www.html5canvastutorials.com/tutorials/html5-canvas-line-caps/
+    context.lineCap = 'round'; // defaults to butt
+
+    context.beginPath();
+    // Move our 'drawing point'
+    context.moveTo(550, 100);
+
+    // Draw a few lines
+    context.lineTo(450, 100);
+    context.lineTo(550, 150);
+    context.lineTo(450, 50);
+
+    context.stroke();
 }());

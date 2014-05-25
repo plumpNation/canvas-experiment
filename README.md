@@ -8,9 +8,12 @@ An introduction to the canvas for me.
 ### the canvas tag
 https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Basic_usage
 
-### lines
+### Drawing lines
 http://tutorials.jenkov.com/html5-canvas/paths.html
 http://msdn.microsoft.com/en-us/library/ie/ff975409(v=vs.85).aspx
+
+### Joining lines
+http://www.html5canvastutorials.com/tutorials/html5-canvas-line-joins/
 
 ### circles
 http://www.html5canvastutorials.com/tutorials/html5-canvas-circles/
