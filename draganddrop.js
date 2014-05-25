@@ -5,6 +5,7 @@
     'use strict';
 
     var canvas = document.getElementById('drag-and-drop'),
+        canvasState,
         rectangle,
         context;
 
@@ -13,14 +14,13 @@
         return;
     }
 
+    canvasState = CanvasState.create(canvas);
+
     // Create our rectangle again.
     context = canvas.getContext('2d');
 
-    var circle = Circle.create(125, 125, 150, '#FF0000');
-    circle.draw(context);
+    var rect = Rectangle.create(125, 125, 150, 150, '#FF0000');
+    rect.draw(context);
 
-    // Now to add drag and drop
-    canvas.onclick = function (e) {
-        console.log('clicked', e);
-    };
+    canvasState.addShape(rect);
 }());

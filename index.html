@@ -16,10 +16,19 @@
     <body>
         <canvas id="rect" width="640" height="300"></canvas>
         <canvas id="drag-and-drop" width="640" height="300"></canvas>
+
+        <script src="lib/Polyfill.js"></script>
         <script src="lib/BaseObject.js"></script>
         <script src="lib/Shape.js"></script>
         <script src="lib/Rectangle.js"></script>
+        <script src="lib/Circle.js"></script>
+        <script src="lib/CanvasState.js"></script>
+
+        <!-- simple drawing exercise with inheritance to boot -->
         <script src="rect.js"></script>
+
+        <!-- listening on the canvas object and interpreting
+        into interaction with canvas objects -->
         <script src="draganddrop.js"></script>
     </body>
 </html>
