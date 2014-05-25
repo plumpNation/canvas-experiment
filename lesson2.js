@@ -1,12 +1,7 @@
 /*!
- * A more complex example showing how to use ECMAscript 5 Object.create
- * function to create shape prototypes, and a canvas state to allow us to
- * drag and drop.
+ * LESSON 2
  *
- * In the new Polyfill.js file, you can see how we extend the 2d context
- * prototype in order to add a simple clear function.
- *
- * @see Shape.js, Circle.js, Rectangle.js, Polyfill.js, CanvasState.js
+ * Built in functions, in this case, the rectangle.
  */
 (function () {
     'use strict';

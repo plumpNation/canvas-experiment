@@ -1,4 +1,6 @@
 /*!
+ * LESSON 3
+ *
  * A more complex example showing how to use ECMAscript 5 Object.create
  * function to create shape prototypes, and a canvas state to allow us to
  * drag and drop.

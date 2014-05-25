@@ -1,13 +1,18 @@
 /*!
- * drawing lines.
+ * LESSON 1
+ *
+ * The basics of all drawing software. Straight lines AKA the 'path'.
  */
 (function () {
     var lines = document.getElementById('lines'),
         context = lines.getContext('2d');
 
-    // Set a couple of styles
-    context.lineWidth = 10;
+    // Stroke is just the name of a line in graphics.
     context.strokeStyle = 'black';
+
+    // As you can see, this is called lineWidth and not strokeWidth.
+    // I have no idea why.
+    context.lineWidth = 10;
 
     // Tell the context we are starting a new path.
     context.beginPath();
@@ -22,8 +27,10 @@
 
     context.stroke();
 
-    // To demonstrate the closePath, I'm adding another path next to it.
+    // To demonstrate the closePath, I'm adding another path using it.
+    // IMPORTANT NOTE: We are beginning a new path...
     context.beginPath();
+
     // Move our 'drawing point'
     context.moveTo(400, 100);
 
