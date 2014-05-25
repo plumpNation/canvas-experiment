@@ -19,8 +19,11 @@
     // Create our rectangle again.
     context = canvas.getContext('2d');
 
-    var rect = Rectangle.create(125, 125, 150, 150, '#FF0000');
+    var rect = Rectangle.create(125, 125, 150, 150, '#2aa36f');
     rect.draw(context);
-
     canvasState.addShape(rect);
+
+    var circle = Circle.create(125, 125, 150, '#4b269a');
+    circle.draw(context);
+    canvasState.addShape(circle);
 }());
