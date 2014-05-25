@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Canvas</title>
+        <title>Canvas experiment</title>
         <style>
             body {
                 background: #E6F5AE;
@@ -14,9 +14,12 @@
         </style>
     </head>
     <body>
-        <canvas id="test" width="640" height="300">
-            <img src="clock.jpg" alt="You see this clock because you are using an old browser">
-        </canvas>
-        <script src="canvas.js"></script>
+        <canvas id="rect" width="640" height="300"></canvas>
+        <canvas id="drag-and-drop" width="640" height="300"></canvas>
+        <script src="lib/BaseObject.js"></script>
+        <script src="lib/Shape.js"></script>
+        <script src="lib/Rectangle.js"></script>
+        <script src="rect.js"></script>
+        <script src="draganddrop.js"></script>
     </body>
 </html>
