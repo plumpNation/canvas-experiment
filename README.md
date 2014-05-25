@@ -19,3 +19,4 @@ https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Canvas_tutorial/Basic_us
 
 ## drag and drop
 http://rectangleworld.com/blog/archives/15
+http://simonsarris.com/blog/510-making-html5-canvas-useful
